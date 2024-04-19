@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="catalog.css">
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #001428;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+.main {
+    background-image: url(https://images7.alphacoders.com/798/798461.jpg);
+    background-size: max(1200px, 91vw);
+    background-position:top ;
+    background-repeat: no-repeat;
+    height: 905px;
+    position: relative;
+    color: white;  
+    background-size: auto;
+}
+.main .box {
+    height: 57rem;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+    position: relative;
+    z-index: 1;
+    transition: 1.5s ease;
+}
+.card{
+    width: 276px;
+    margin: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.5s ease;
+}
+.card img{
+    width: 83%;
+    height: 355px;
+
+    transition: 0.5 ease;
+}
+.card img:hover{
+cursor: pointer;
+}
+.card img:hover{
+    
+box-shadow: 0 0 5px #0042b4, 
+0 0 10px #0047c1bf, 
+0 0 20px #0047c2, 
+0 0 50px #0049A9;
+}
+.card-info{
+    display: none;padding: 13px 0px 13px 0px;
+    margin-left: 15%;
+    width: 79%;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+    transition: 0.5s ease;
+}
+.card:hover .card-info{
+    display: grid;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p style="position: relative;z-index: 1; font-size: 2rem; display: flex; justify-content: center; font-weight: bold;">The Books available at store : </p>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://www.india.com/wp-content/uploads/2016/12/One-Indian-Girl.jpg">
+                <div class="card-info">
+                    <p>Book : Life is What You Make it</p>
+                    <p>Author : Preeti Shenoy</p>
+		    <p>Price : ₹250</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/41tHyO2KFgL._AC_UF1000,1000_QL80_.jpg">
+                <div class="card-info">
+                    <p>Book:The God of Small Things</p>
+                    <p>Author : Arundhati Roy</p>
+                    <p>Price : ₹499</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img" src="https://m.media-amazon.com/images/I/71GSHBNFdNL._AC_UF1000,1000_QL80_.jpg">
+                <div class="card-info">
+                    <p>Book : The Guide</p>
+                    <p>Author :  R.K. Narayan</p>
+                    <p>Price : ₹250</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1480106986i/33917.jpg">
+                <div class="card-info">
+                    <p>Book : The Namesake</p>
+                    <p>Author : Jhumpa Lahiri</p>
+                    <p>Price : ₹450</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/The_Immortals_Of_Meluha.jpg">
+                <div class="card-info">
+                    <p>Book : The Immortals of Meluha</p>
+                    <p>Author :  Amish Tripathi</p>
+                    <p>Price :  $14.99</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/810C5FnplgL._AC_UF1000,1000_QL80_.jpg">
+                <div class="card-info">
+                    <p>Book : The Oath of the Vayuputras</p>
+                    <p>Author : Amish Tripathi</p>
+                    <p>Price : $15.75</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/The_Shadow-lines.jpg">
+                <div class="card-info">
+                    <p>Book : The Shadow Lines</p>
+                    <p>Author : PAmitav Ghosh </p>
+                    <p>Price : $10.75</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327909065i/95186.jpg">
+                <div class="card-info">
+                    <p>Book : The Inheritance of Loss</p>
+                    <p>Author : Kiran Desai</p>
+                    <p>Price : $13.20</p>
+                </div>
+            </div>
+        </div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
+
+

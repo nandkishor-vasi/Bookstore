@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="shortcut icon" href="icons/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="register.css">
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #001428;
+}
+.main {
+    
+    background-image: url(https://pics.craiyon.com/2024-01-28/MKfT9tRvSbiDNGSCL38CjQ.webp);
+    background-size: max(1200px, 100vw);
+    background-position:top ;
+    background-repeat: no-repeat;
+    height: 770px;
+    position: relative;
+    color: white;
+}
+
+.main .box {
+    height: 770px;
+    width: 100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+
+.login-wrapper
+{
+    font-family: 'Martel Sans', sans-serif;
+    max-width: 85vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form
+{
+    width: 33%;
+    position: relative;
+    max-width: 593px;
+    padding: 66px 0px 78px 33px;
+    box-shadow: 0 0 0px #0042b4, 
+    0 0 0px #0047c1bf, 
+    0 0 0px #0047c2, 
+    0 0 150px #0049A9;
+    background: linear-gradient(to left, #00399c, #000000);
+    color: #fff;
+    display: grid;
+    gap: 19px;
+    margin: 182px 0px 92px 0px;
+    border-top-right-radius: 27px;
+    border-bottom-right-radius: 27px;
+    border-top-left-radius: 27px;
+    border-bottom-left-radius: 27px;
+    z-index: 1;
+
+}
+.input-group input {
+    font-size: 1rem;
+    color: white;
+    padding: 10px;
+    background-color: transparent;
+    border: 0.5px solid rgba(246, 238, 238, 0.5);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    outline: none;
+}
+.input-group input:focus {
+    border: 1px solid aqua;
+}
+
+.register {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+.form .submit-btn {
+    width: 72px;
+    height: 29px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    height: 22px;
+    background-color: royalblue;
+    color: white;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border: none;
+}
+li {
+    list-style-type: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="login-wrapper">
+            <form class="form" method="post" >
+                <h2>Register</h2>
+                <div class="input-group">
+                    <input type="username" name="username" id="username" placeholder="Enter Username" required />
+                </div>   
+                <div class="input-group">
+                    <input type="text" name="loginUser" id="email" placeholder="Enter Email Address" required />
+                </div>
+                <div class="input-group">
+                    <input type="password" name="loginPassword" id="password" placeholder="Enter Password" required />
+                </div>
+                <div class="input-group">
+                    <input type="age" name="age" id="age" placeholder="Enter Your Age" required />
+                </div>
+                    <div class="sign-in">
+                        <input type="button" value="Submit" class="submit-btn" onclick="location.href='index.html'"/>    
+                </div>   
+                <div class="register">
+                        <input type="button" value="Sign in" class="submit-btn" onclick="location.href='login.html'"/>
+                    <label for="Register">Already have account?</label>
+                </div>    
+            </form>
+        </div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
+
